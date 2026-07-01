@@ -23,7 +23,7 @@
   <header class="top-bar glass">
     <a class="top-bar__brand" href="#home">
       <span class="material-symbols-rounded">code</span>
-      <span>Portfolio</span>
+      <span>个人网站</span>
     </a>
     <nav class="top-bar__nav" aria-label="主导航">
       <a href="#about">关于</a>
@@ -56,8 +56,8 @@
           </a>
         </div>
       </div>
-      <div class="hero__avatar glass">
-        <span class="material-symbols-rounded hero__avatar-icon">person</span>
+      <div class="hero__avatar glass" style="overflow: hidden; padding: 0;">
+        <img src="https://avatars.githubusercontent.com/u/102970970?s=400&u=f12442b1449a18d6e8dfb1786135dbccf083f418&v=4" alt="尹嘉骐的头像" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
     </section>
 
@@ -141,36 +141,41 @@
         <h2 class="title">项目</h2>
       </div>
       <div class="grid grid--3">
-        <article class="project glass">
-          <div class="project__icon">
-            <span class="material-symbols-rounded">web</span>
-          </div>
-          <h3 class="title-sm">个人博客</h3>
-          <p>基于 Twilight (Astro) 的Serverless博客，支持自定义主题色与 RSS 订阅。</p>
-          <div class="project__tags">
-            <span>Astro</span>
-            <span>Cloudflare</span>
-          </div>
-          <a class="project__link" href="#" aria-label="查看个人博客">
-            了解更多
-            <span class="material-symbols-rounded">arrow_forward</span>
-          </a>
-        </article>
-        <article class="project glass">
-          <div class="project__icon">
-            <span class="material-symbols-rounded">dashboard</span>
-          </div>
-          <h3 class="title-sm">Dock</h3>
-          <p>Dock: Your Data's Home Port.</p>
-          <div class="project__tags">
-            <span>Microsoft Graph API</span>
-            <span>Next.js</span>
-          </div>
-          <a class="project__link" href="#" aria-label="查看Dock">
-            了解更多
-            <span class="material-symbols-rounded">arrow_forward</span>
-          </a>
-        </article>
+        <a href="https://boomdee-blog.pages.dev" class="project-wrapper" aria-label="查看个人博客">
+          <article class="project glass">
+            <div class="project__icon">
+              <span class="material-symbols-rounded">web</span>
+            </div>
+            <h3 class="title-sm">个人博客</h3>
+            <p>基于 Twilight (Astro) 的Serverless博客，支持自定义主题色与 RSS 订阅。</p>
+            <div class="project__tags">
+              <span>Astro</span>
+              <span>Cloudflare</span>
+            </div>
+            <div class="project__link">
+              了解更多
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://dock.boomdee.dpdns.org" class="project-wrapper" aria-label="查看Dock">
+          <article class="project glass">
+            <div class="project__icon">
+              <span class="material-symbols-rounded">dashboard</span>
+            </div>
+            <h3 class="title-sm">Dock</h3>
+            <p>Dock: Your Data's Home Port.</p>
+            <div class="project__tags">
+              <span>Microsoft Graph API</span>
+              <span>Next.js</span>
+            </div>
+            <div class="project__link">
+              了解更多
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </div>
+          </article>
+        </a>
       </div>
     </section>
 
