@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="尹嘉骐的个人网站">
+  <title>尹嘉骐的个人网站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Flex:opsz,wght@8..144,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/light.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__orb ambient__orb--primary"></div>
+    <div class="ambient__orb ambient__orb--tertiary"></div>
+    <div class="ambient__orb ambient__orb--secondary"></div>
+  </div>
+
+  <header class="top-bar glass">
+    <a class="top-bar__brand" href="#home">
+      <span class="material-symbols-rounded">code</span>
+      <span>Portfolio</span>
+    </a>
+    <nav class="top-bar__nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题">
+      <span class="material-symbols-rounded" id="theme-icon">dark_mode</span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero__content glass glass--elevated">
+        <p class="label">你好，我是</p>
+        <h1 class="display">尹嘉骐</h1>
+        <p class="headline">学生 · （有时候是）Web和硬件开发者</p>
+        <p class="body-lg">
+          喜欢平面设计，专注于制作一些Web应用和创意硬件
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--filled" href="#projects">
+            <span class="material-symbols-rounded">work</span>
+            查看项目
+          </a>
+          <a class="btn btn--tonal" href="#contact">
+            <span class="material-symbols-rounded">mail</span>
+            联系我
+          </a>
+        </div>
+      </div>
+      <div class="hero__avatar glass">
+        <span class="material-symbols-rounded hero__avatar-icon">person</span>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section__header">
+        <span class="material-symbols-rounded section__icon">info</span>
+        <h2 class="title">关于我</h2>
+      </div>
+      <div class="grid grid--2">
+        <article class="card glass">
+          <h3 class="title-sm">简介</h3>
+          <p>
+            我是一个学生，专注于将想法转变为现实。
+            有时候我会尝试一些新的设计理念和硬件项目。它们有时很难，但是无论难度如何，我都愿意尝试。
+          </p>
+        </article>
+        <article class="card glass">
+          <h3 class="title-sm">时间线</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline__year">2025 — 至今</span>
+              <span class="timeline__text">着手开发Web应用和小工具</span>
+            </li>
+            <li>
+              <span class="timeline__year">2024</span>
+              <span class="timeline__text">成为较早注册ChatGPT的用户之一</span>
+            </li>
+            <li>
+              <span class="timeline__year">2023</span>
+              <span class="timeline__text">注册Coze平台，基于Doubao系列模型开发agent</span>
+            </li>
+            <li>
+              <span class="timeline__year">2022.4</span>
+              <span class="timeline__text">注册自己的GitHub账号，开始探索编程，并创建了自己的第一个仓库</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__header">
+        <span class="material-symbols-rounded section__icon">psychology</span>
+        <h2 class="title">技能</h2>
+      </div>
+      <div class="chip-grid">
+        <div class="chip glass">
+          <span class="material-symbols-rounded">html</span>
+          HTML / CSS (with AI)
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">deployed_code</span>
+          Python
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">deployed_code</span>
+          C++
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">cell_tower</span>
+          LoRa
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">palette</span>
+          Poster / Powerpoint Design
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">cloud</span>
+          Cloudflare
+        </div>
+        <div class="chip glass">
+          <span class="material-symbols-rounded">smart_toy</span>
+          Agent / Prompt Design
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section__header">
+        <span class="material-symbols-rounded section__icon">folder_open</span>
+        <h2 class="title">项目</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="project glass">
+          <div class="project__icon">
+            <span class="material-symbols-rounded">web</span>
+          </div>
+          <h3 class="title-sm">个人博客</h3>
+          <p>基于 Twilight (Astro) 的Serverless博客，支持自定义主题色与 RSS 订阅。</p>
+          <div class="project__tags">
+            <span>Astro</span>
+            <span>Cloudflare</span>
+          </div>
+          <a class="project__link" href="#" aria-label="查看个人博客">
+            了解更多
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+        </article>
+        <article class="project glass">
+          <div class="project__icon">
+            <span class="material-symbols-rounded">dashboard</span>
+          </div>
+          <h3 class="title-sm">Dock</h3>
+          <p>Dock: Your Data's Home Port.</p>
+          <div class="project__tags">
+            <span>Microsoft Graph API</span>
+            <span>Next.js</span>
+          </div>
+          <a class="project__link" href="#" aria-label="查看Dock">
+            了解更多
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__header">
+        <span class="material-symbols-rounded section__icon">contact_mail</span>
+        <h2 class="title">联系我</h2>
+      </div>
+      <div class="contact glass glass--elevated">
+        <p class="body-lg">有合作或交流的想法？欢迎随时联系。</p>
+        <div class="contact__links">
+          <a class="contact__item glass" href="mailto:racial.quokka.qbff@mask.me">
+            <span class="material-symbols-rounded">mail</span>
+            <span>
+              <strong>Email</strong>
+              <small>racial.quokka.qbff@mask.me</small>
+            </span>
+          </a>
+          <a class="contact__item glass" href="https://github.com/BOOMDEE" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-rounded">code</span>
+            <span>
+              <strong>GitHub</strong>
+              <small>@BOOMDEE</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <p>&copy; 2026 尹嘉骐</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
